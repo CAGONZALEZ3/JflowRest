@@ -78,8 +78,8 @@ const start = async () => {
   try {
     const PORT = process.env.PORT || 3001;
     await fastify.ready(); // asegura que Fastify cargue todo antes de iniciar
-    httpServer.listen(PORT, () => {
-      console.log(`✅ Servidor ejecutándose en http://localhost:${PORT}`);
+    httpServer.listen(PORT, "0.0.0.0", () => {
+      console.log(`✅ Servidor ejecutándose en puerto ${PORT}`);
     });
   } catch (err) {
     fastify.log.error(err);
