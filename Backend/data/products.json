@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Camiseta Oversize Negra",
+    "description": "Camiseta de algodón 100% con fit holgado.",
+    "price": 39.99,
+    "images": [
+      "/images/p1-1.jpg",
+      "/images/p1-2.jpg"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 50,
+    "category": "Tops",
+    "createdAt": "2024-01-05T15:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Pantalón Cargo Beige",
+    "description": "Pantalón cómodo con múltiples bolsillos.",
+    "price": 59.99,
+    "images": [
+      "/images/p2-1.jpg"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "stock": 30,
+    "category": "Bottoms",
+    "createdAt": "2024-01-10T09:45:00Z"
+  }
+]

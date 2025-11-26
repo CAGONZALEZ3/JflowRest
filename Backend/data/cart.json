@@ -1,0 +1,22 @@
+[
+  {
+    "id": "c1",
+    "userId": "u1",
+    "items": [
+      {
+        "productId": "p1",
+        "quantity": 2,
+        "size": "M",
+        "price": 39.99
+      },
+      {
+        "productId": "p2",
+        "quantity": 1,
+        "size": "L",
+        "price": 59.99
+      }
+    ],
+    "total": 139.97,
+    "updatedAt": "2024-03-01T11:20:00Z"
+  }
+]

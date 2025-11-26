@@ -1,0 +1,27 @@
+[
+  {
+    "id": "o1",
+    "userId": "u1",
+    "items": [
+      {
+        "productId": "p1",
+        "quantity": 2,
+        "size": "M",
+        "price": 39.99
+      },
+      {
+        "productId": "p2",
+        "quantity": 1,
+        "size": "L",
+        "price": 59.99
+      }
+    ],
+    "subtotal": 139.97,
+    "shippingCost": 10.0,
+    "total": 149.97,
+    "status": "paid",
+    "shippingAddress": "Calle Falsa 123, Ciudad",
+    "createdAt": "2024-03-02T14:00:00Z",
+    "updatedAt": "2024-03-02T14:00:00Z"
+  }
+]

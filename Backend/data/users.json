@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Carlos",
+    "lastName": "Pérez",
+    "email": "carlos@example.com",
+    "password": "$2b$10$...",
+    "address": "Calle Falsa 123, Ciudad",
+    "phone": "+1234567890",
+    "role": 2,
+    "createdAt": "2024-01-01T10:00:00Z",
+    "updatedAt": "2024-05-01T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Ana",
+    "lastName": "López",
+    "email": "ana@example.com",
+    "password": "$2b$10$...",
+    "address": "Av. Real 456, Ciudad",
+    "phone": "+1234567891",
+    "role": 2,
+    "createdAt": "2024-02-01T12:30:00Z",
+    "updatedAt": "2024-05-01T10:00:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Test Nombre Usuario",
+    "lastName": "Test Apellido",
+    "email": "email.test@test.com",
+    "password": "$2b$12$QE6l6XG8k9d8rRPxuKdIrupR4m1GBRXsx/8AzmlywV9yVb0xWM6uG",
+    "address": "",
+    "phone": "",
+    "role": 2,
+    "createdAt": "2025-07-04T00:56:36.495Z",
+    "updatedAt": "2025-07-04T00:56:36.496Z"
+  },
+  {
+    "id": 4,
+    "name": "(TEST) Carlos Sánchez",
+    "lastName": "(TEST)Sánchez",
+    "email": "carlos@example.com",
+    "password": "$2b$12$.z5ugIrZs4PKOD5QEj3Zd.DpNBfxr4u4yXOy.Ikhr0pYhYtzjEi8.",
+    "address": "",
+    "phone": "",
+    "role": 2,
+    "createdAt": "2025-07-14T17:14:47.428Z",
+    "updatedAt": "2025-07-14T17:14:47.428Z"
+  },
+  {
+    "id": 5,
+    "name": "(TEST) Cesar",
+    "lastName": "(TEST) Bernal",
+    "email": "example.mail@email.com",
+    "password": "$2b$12$4b2x38C./ZJicGI1z3qrNuNh2nGWM4mB75fqhpOdL59lAkchv7rla",
+    "address": "",
+    "phone": "",
+    "role": 2,
+    "createdAt": "2025-07-14T17:54:33.504Z",
+    "updatedAt": "2025-07-14T17:54:33.504Z"
+  },
+  {
+    "id": 6,
+    "name": "TESST",
+    "lastName": "USSER",
+    "email": "example.email@email.com",
+    "password": "$2b$12$pD.BgxXVnG7fKertNmL5xOxmm0Haexxzsuf6d2u87/VOl72ugPO4q",
+    "address": "",
+    "phone": "",
+    "role": 2,
+    "createdAt": "2025-07-15T14:01:40.093Z",
+    "updatedAt": "2025-07-15T14:01:40.093Z"
+  },
+  {
+    "id": 7,
+    "name": "TestCesar",
+    "lastName": "TestRestrepo",
+    "email": "example.cesar@email.com",
+    "password": "$2b$12$uyD5IeLaEI64BYNC0jlc3.BPuAyoYHZkLX9uF/6orcZFfMeK3B8ni",
+    "phone": "",
+    "birthDate": "",
+    "gender": "",
+    "address": "",
+    "postalCode": "",
+    "country": "",
+    "city": "",
+    "state": "",
+    "role": 2,
+    "createdAt": "2025-07-16T16:55:59.262Z",
+    "updatedAt": "2025-07-16T16:55:59.262Z"
+  }
+]
