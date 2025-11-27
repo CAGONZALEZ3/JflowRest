@@ -3,7 +3,7 @@ import Fastify from "fastify";
 import fastifyCookie from "@fastify/cookie";
 import fastifySession from "@fastify/session";
 import cors from "@fastify/cors";
-import { Server } from "socket.io";
+
 
 // Importación de rutas
 import userRoutes from "./routes/user.route.js";

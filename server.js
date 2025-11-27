@@ -1,5 +1,6 @@
 import { connect } from 'mongoose';
 import fastify from './app.js';
+import { Server } from "socket.io";
 
 const MONGO_URI = `${process.env.MONGODB_URI}/jflowg_db`
 const PORT = process.env.PORT || 3001
