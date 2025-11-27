@@ -65,22 +65,7 @@ const start = async () => {
     console.log("🚀 Fastify corriendo en:", address); */
 
     // 2️⃣ Attach Socket.io AFTER fastify.listen
-    const io = new Server(fastify.server, {
-      cors: {
-        origin: "*",
-        methods: ["GET", "POST", "PUT", "DELETE"],
-        credentials: true,
-      },
-    });
-
-    // 3️⃣ Socket events
-    io.on("connection", (socket) => {
-      console.log("🛰️ Cliente conectado:", socket.id);
-
-      socket.on("disconnect", () => {
-        console.log("❌ Cliente desconectado:", socket.id);
-      });
-    });
+    
 
     
 
