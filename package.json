@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "test": "vitest",
-    "start": "node app.js",
+    "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "keywords": [],
