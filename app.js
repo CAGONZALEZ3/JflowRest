@@ -19,6 +19,13 @@ const fastify = Fastify({
   logger: true,
 });
 
+  // 4️⃣ Inject io into requests
+  fastify.decorateRequest("io", null);
+  fastify.addHook("onRequest", (req, reply, done) => {
+    req.io = io;
+    done();
+  });
+
 // Plugins
 fastify.register(fastifyCookie);
 fastify.register(fastifySession, {
@@ -44,13 +51,45 @@ fastify.register(adminRoutes);
 fastify.register(ordersRoutes);
 fastify.register(returnRoutes);
 
-// Decorate fastify instance so `io` can be attached later (must be before listen)
-fastify.decorate("io", null);
+// 🚀 Inicializar servidor
+const start = async () => {
+  try {
+    const PORT = process.env.PORT || 3001;
 
-// Attach `io` to requests at runtime. `fastify.io` will be set after the server starts.
-fastify.addHook("onRequest", (req, reply, done) => {
-  req.io = fastify.io;
-  done();
-});
+    // 1️⃣ Start Fastify first
+    /* const address = await fastify.listen({
+      port: PORT,
+      host: "0.0.0.0",
+    });
+
+    console.log("🚀 Fastify corriendo en:", address); */
+
+    // 2️⃣ Attach Socket.io AFTER fastify.listen
+    const io = new Server(fastify.server, {
+      cors: {
+        origin: "*",
+        methods: ["GET", "POST", "PUT", "DELETE"],
+        credentials: true,
+      },
+    });
+
+    // 3️⃣ Socket events
+    io.on("connection", (socket) => {
+      console.log("🛰️ Cliente conectado:", socket.id);
+
+      socket.on("disconnect", () => {
+        console.log("❌ Cliente desconectado:", socket.id);
+      });
+    });
+
+    
+
+  } catch (err) {
+    fastify.log.error(err);
+    process.exit(1);
+  }
+};
+
+start();
 
 export default fastify;
